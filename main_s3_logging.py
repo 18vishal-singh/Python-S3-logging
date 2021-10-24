@@ -31,5 +31,5 @@ def my_function():
 		s3_store_response = put_content_to_s3(s3_path=s3_log_path+'logs.txt', content=log_stringio_obj.getvalue())
 		assert s3_store_response['success'], "Error Putting logs to S3:\n{0}".format(s3_store_response['data'])
 
-# if __name__ == "__main__":
-#     my_function()
+if __name__ == "__main__":
+    my_function()
